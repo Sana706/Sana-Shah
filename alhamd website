@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+
+</head>
+<style>
+    * {
+        /*  ( * ) selector is used to select all elements in  webpage */
+        padding: 0;
+        margin: 0;
+        font-family: 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+        transition: all 700ms ease;
+    }
+    /* Header Section Code Start */
+
+    .header {
+        padding: 10px;
+        width: 100%;
+        background: #333;
+        color: #fff;
+    }
+
+    h2,
+    h3 {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        font-size: 30px;
+    }
+
+    h3 {
+        position: absolute;
+        top: 75px;
+        left: 200px;
+        font-size: 25px;
+    }
+    /* Header Section Code End */
+
+    .container {
+        position: absolute;
+        top: 30%;
+        background-color: #333;
+        width: 250px;
+        height: 50%;
+    }
+
+    ul li:first-child a {
+        /* -> accessing the anchor tag inside LIST-ITEM where LIST-ITEM is first child of UNORDERED LIST  */
+        /* -> to add space between top-border and first anchor tag (HOME)   */
+        margin-top: 50px;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        /* -> LETTER-SPACE use to add space between character by default the value of letter spacing is 0 */
+        letter-spacing: 1px;
+    }
+
+    li a:hover {
+        letter-spacing: 2px;
+        color: white;
+        background-color: black;
+    }
+
+    .mainContainer {
+        height: 60%;
+        width: 70%;
+        position: absolute;
+        right: 60px;
+        top: 25%;
+        background: #333;
+    }
+
+    .footer {
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: #333;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .footer i {
+        padding-left: 20px;
+    }
+
+    .footer i:hover {
+        color: royalblue;
+        transform: translateY(-10px);
+        /* TranslateY change the y-axis of element */
+        /* positive value will change y-axis is downwards and negtive value change in upwards */
+    }
+
+    i.ig-logo:hover {
+        /* Accessing the i with class( ig-logo ) */
+        /* to add different color to instagram logo on hover */
+        color: #e95950;
+    }
+
+    i.yt-logo:hover {
+        /* Accessing the i with class( yt-logo ) */
+        /* to add different color to youtube logo on hover */
+        color: #ff0000;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="https://aiu.edu.pk/html/treely/images/logoaiu.png" width="150">
+            <h2> Alhamd Islamic University</h2><br>
+            <h3> We Change Lives</h3>
+        </nav>
+    </div>
+    <!-- Sidebar Container -->
+    <div class="container">
+
+        <ul>
+            <li><a href="#home">Home</a></li><br>
+            <br>
+            <li><a href="#news">News</a></li><br>
+            <br>
+            <li><a href="#contact">Contact</a></li><br>
+            <br>
+            <li><a href="#about">About</a></li><br>
+            <br>
+        </ul>
+    </div>
+
+    <!-- Main Container where content change according to page -->
+    <div class="mainContainer">
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <!-- These icons are coming from link at line number 8  -->
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram ig-logo"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube yt-logo"></i>
+        <i class="fa-solid fa-copyright"></i>
+        <i class="fa-solid fa-registered"></i>
+    </div>
+
+</body>
+
+</html>
